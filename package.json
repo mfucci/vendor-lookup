@@ -23,7 +23,7 @@
     "oui"
   ],
   "files": [
-    "build/dist/**/*"
+    "dist/**/*"
   ],
   "author": "Marco Fucci di Napoli <mfucci@gmail.com>",
   "license": "MIT",
