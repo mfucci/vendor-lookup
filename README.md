@@ -31,6 +31,6 @@ or '<random MAC>' if the MAC address is a random MAC (often used by mobile devic
 or '<private>' if this prefix is associated with a vendor which choosed to keep their records private
 or '<unknown>' of this prefix is not in IEEE database
 
-### `isRandom(mac: string): boolean`
+### `isRandomMac(mac: string): boolean`
 
 Returns true if this MAC address is random
