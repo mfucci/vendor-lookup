@@ -2,7 +2,8 @@
   "name": "@network-utils/vendor-lookup",
   "version": "1.0.0-0",
   "description": "Returns the IEEE registered vendor name from the MAC address, using an up-to-date database (with a script to update it automatically).",
-  "main": "build/dist/VendorLookup.js",
+  "main": "build/dist/index.js",
+  "types": "build/dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "build_test": "tsc --project tsconfig.test.json",
