@@ -1,4 +1,4 @@
-// Last update on Fri Feb 18 2022 23:07:55 GMT-1000 (Hawaii-Aleutian Standard Time)
+// Last update on Mon Feb 21 2022 07:57:46 GMT-1000 (Hawaii-Aleutian Standard Time)
 export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "16063": [
     "001974"
@@ -71443,14 +71443,14 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "closip Inc.": [
     "9405BB7"
   ],
-  "HONGKONG SAINT TECH INDUSTRIAL LIMITED": [
-    "0C86299"
-  ],
   "BEIJING BEIBIANZHIDA TECHNOLOGY CO.,LTD": [
     "0C8629D"
   ],
   "Shenzhen protostellar technology Co., Ltd": [
     "0C86295"
+  ],
+  "HONGKONG SAINT TECH INDUSTRIAL LIMITED": [
+    "0C86299"
   ],
   "Akribis Systems": [
     "0C8629B",
@@ -71459,9 +71459,6 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "Braums": [
     "6C93080"
   ],
-  "WATERFORD CONSULTANTS LLC": [
-    "6C93081"
-  ],
   "Apollo Infoways Private Limited": [
     "3043D72"
   ],
@@ -71469,11 +71466,17 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
     "3043D73",
     "8C1F64E98"
   ],
-  "Avon Protection": [
-    "381F268"
+  "WATERFORD CONSULTANTS LLC": [
+    "6C93081"
   ],
   "DIGICITI Technology Co.,Ltd": [
     "3043D77"
+  ],
+  "Avon Protection": [
+    "381F268"
+  ],
+  "Thermia AB": [
+    "18A59C5"
   ],
   "SMS Evoko Group AB": [
     "381F269"
@@ -71481,9 +71484,6 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "CAL-COMP INDUSTRIA E COMERCIO DE ELETRONICOS E INFORMATICA LTDA": [
     "18A59CB",
     "10DCB62"
-  ],
-  "Thermia AB": [
-    "18A59C5"
   ],
   "BlueEyes Technology": [
     "18A59CC"
@@ -73689,14 +73689,11 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "GUANGZHOU HERYSTORM TECHNOLOGY CO.,LTD.": [
     "988FE01"
   ],
-  "Bamboo Dynamics Corporation., Ltd.": [
-    "1054D29"
-  ],
   "Raylogic Control Systems Private Limited": [
     "1054D24"
   ],
-  "Sybersense": [
-    "1054D25"
+  "Bamboo Dynamics Corporation., Ltd.": [
+    "1054D29"
   ],
   "SHENZHEN CARSAFE TECHNOLOGY DEVELOPMENT CO.,LTD": [
     "1054D27"
@@ -73711,14 +73708,17 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
     "0C86296",
     "1C82593"
   ],
+  "Sybersense": [
+    "1054D25"
+  ],
   "MyGregor Ltd": [
     "0C86298"
   ],
-  "Shenzhen DOOGEE Hengtong Technology CO., LTD": [
-    "6C93089"
-  ],
   "Shenzhen TOPWAY Technology Co.,LTD": [
     "6C9308A"
+  ],
+  "Shenzhen DOOGEE Hengtong Technology CO., LTD": [
+    "6C93089"
   ],
   "SYMES SA": [
     "3043D70"
@@ -73730,11 +73730,11 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
     "6C9308E",
     "8C1F646F9"
   ],
-  "Jade Bird Fire Co., Ltd.": [
-    "381F26C"
-  ],
   "Zhejiang Huazhou Intelligent Equipment Co,. Ltd": [
     "381F265"
+  ],
+  "Jade Bird Fire Co., Ltd.": [
+    "381F26C"
   ],
   "Omwave": [
     "18A59C0",
@@ -73746,15 +73746,15 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "estun automation co.,ltd": [
     "18A59C9"
   ],
-  "Topway Global Technology Limited": [
-    "1C59748"
+  "Shenzhen Geshem Technology Co Ltd": [
+    "1C5974D"
   ],
   "King-On Technology Ltd.": [
     "1C5974C",
     "70B3D5D35"
   ],
-  "Shenzhen Geshem Technology Co Ltd": [
-    "1C5974D"
+  "Topway Global Technology Limited": [
+    "1C59748"
   ],
   "BMC Messsysteme GmbH": [
     "18A59CE"
@@ -76148,6 +76148,9 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "Pavana Technologies JSC.": [
     "988FE0A"
   ],
+  "COSMO AIOT TECHNOLOGY CO LTD": [
+    "1054D2E"
+  ],
   "GIPS Technology Co., Ltd.": [
     "1054D20"
   ],
@@ -76159,9 +76162,6 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   ],
   "LUXSHARE-ICT Co., Ltd.": [
     "1054D2C"
-  ],
-  "COSMO AIOT TECHNOLOGY CO LTD": [
-    "1054D2E"
   ],
   "SHENZHEN YINGMU TECHNOLOGY.,LTD": [
     "0C8629C"
@@ -76176,14 +76176,14 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "LightnTec GmbH": [
     "6C93083"
   ],
-  "Shenzhen juduoping Technology Co.,Ltd": [
-    "3043D71"
-  ],
   "Sprocomm Technologies Co., Ltd.Guangming Branch": [
     "3043D76"
   ],
   "Shenzhen haichangxing Technology Co., Ltd.": [
     "6C9308C"
+  ],
+  "Shenzhen juduoping Technology Co.,Ltd": [
+    "3043D71"
   ],
   "Guangdong Hongqin Telecom  Technology Co. Ltd.": [
     "3043D7E"
@@ -76191,14 +76191,14 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "Bosch Automotive Electronics India Pvt. Ltd.": [
     "381F263"
   ],
-  "Erba Lachema s.r.o.": [
-    "18A59CA"
+  "BROADEX TECHNOLOGIES CO.LTD": [
+    "18A59C3"
   ],
   "ePower Network Solution Co., Ltd.": [
     "18A59C7"
   ],
-  "BROADEX TECHNOLOGIES CO.LTD": [
-    "18A59C3"
+  "Erba Lachema s.r.o.": [
+    "18A59CA"
   ],
   "Chongqing Taishan Cable Co., Ltd": [
     "1C59742"
@@ -78518,23 +78518,23 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
     "8C1F64D02",
     "70B3D5699",
     "70B3D51BC",
-    "8C1F64F5C",
-    "70B3D5E2F"
-  ],
-  "Airmaster A/S": [
-    "381F264"
+    "70B3D5E2F",
+    "8C1F64F5C"
   ],
   "HWACHANG CORPORATION ": [
     "381F26D"
   ],
-  "Residence Control Ltd": [
-    "18A59C8"
+  "Airmaster A/S": [
+    "381F264"
   ],
   "Actiontec Electronics Inc.": [
     "18A59C2"
   ],
   "IT-1": [
     "18A59C4"
+  ],
+  "Residence Control Ltd": [
+    "18A59C8"
   ],
   "Syntax technology(tianjin)Co.,LTD": [
     "1C59744"
@@ -80725,33 +80725,33 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "Liberty AV Solutions": [
     "6C93087"
   ],
-  "Hangzhou Risco System Co.,Ltd": [
-    "6C93088"
-  ],
   "Uconfree technology(shenzhen)limited": [
     "6C93086"
   ],
-  "ZHEJIANG XIAN DA Environmental Technology Co., Ltd": [
-    "6C93082"
-  ],
-  "PK Solutions LLC": [
-    "3043D79"
+  "Hangzhou Risco System Co.,Ltd": [
+    "6C93088"
   ],
   "Bodhi": [
     "3043D7A"
   ],
+  "ZHEJIANG XIAN DA Environmental Technology Co., Ltd": [
+    "6C93082"
+  ],
   "Kesu (Shanghai) Electronic Technology Co., Ltd": [
     "3043D78"
+  ],
+  "PK Solutions LLC": [
+    "3043D79"
+  ],
+  "FIBERME COMMUNICATIONS LLC": [
+    "3043D74",
+    "8C1F64C68"
   ],
   "NOITAC sp. z o.o. sp.k.": [
     "381F266"
   ],
   "JAESUNG INFORMATION & COMMUNICATION CO.LTD": [
     "381F260"
-  ],
-  "FIBERME COMMUNICATIONS LLC": [
-    "3043D74",
-    "8C1F64C68"
   ],
   "Deutronic Elektronik GmbH": [
     "381F26B"
@@ -83513,15 +83513,15 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "GE AVIC Civil Avionics Systems Company Limited": [
     "8C1F64F74"
   ],
+  "Stercom Power Solutions GmbH": [
+    "8C1F642B6",
+    "70B3D5274"
+  ],
   "Shenzhen zhushida Technology lnformation Co.,Ltd": [
     "8C1F64A5D"
   ],
   "EnviroNode IoT Solutions": [
     "8C1F641AF"
-  ],
-  "Stercom Power Solutions GmbH": [
-    "8C1F642B6",
-    "70B3D5274"
   ],
   "Gateview Technologies": [
     "8C1F64B7B",
@@ -85797,26 +85797,23 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "NETGEN HITECH SOLUTIONS LLP": [
     "8C1F64ED9"
   ],
-  "Wolfspyre Labs": [
-    "8C1F649D4"
-  ],
   "Vekto": [
     "8C1F644AC"
   ],
-  "SpectraDynamics, Inc.": [
-    "8C1F64581"
+  "Wolfspyre Labs": [
+    "8C1F649D4"
   ],
   "IO Master Technology": [
     "8C1F64BD3"
   ],
-  "ESCAD AUTOMATION GmbH": [
-    "8C1F6405F"
+  "SpectraDynamics, Inc.": [
+    "8C1F64581"
   ],
   "TIFLEX": [
     "8C1F64194"
   ],
-  "Neuralog LP": [
-    "8C1F64115"
+  "ESCAD AUTOMATION GmbH": [
+    "8C1F6405F"
   ],
   "Sichuan Aiyijan Technology Company Ltd.": [
     "8C1F6440C"
@@ -85830,14 +85827,17 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "Alifax S.r.l.": [
     "8C1F64C24"
   ],
+  "Neuralog LP": [
+    "8C1F64115"
+  ],
   "Pietro Fiorentini Spa": [
     "8C1F648D9"
   ],
-  "VMukti Solutions Private Limited": [
-    "8C1F64E30"
-  ],
   "Autark GmbH": [
     "8C1F64943"
+  ],
+  "VMukti Solutions Private Limited": [
+    "8C1F64E30"
   ],
   "ACTELSER S.L.": [
     "8C1F643F4"
@@ -87937,14 +87937,14 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "Jide Car Rastreamento e Monitoramento LTDA": [
     "8C1F6422E"
   ],
-  "Real Digital": [
-    "8C1F643B2"
-  ],
   "Fingoti Limited": [
     "8C1F64CD9"
   ],
   "Farmobile LLC": [
     "8C1F64672"
+  ],
+  "Real Digital": [
+    "8C1F643B2"
   ],
   "D-E-K GmbH & Co.KG": [
     "70B3D5219"
@@ -91954,23 +91954,23 @@ export const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = {
   "SASYS e.K.": [
     "8C1F641CB"
   ],
-  "XSENSOR Technology Corp.": [
-    "8C1F647AA"
+  "SCIREQ Scientific Respiratory Equipment  Inc": [
+    "8C1F6401E"
   ],
   "Beijing Wenrise Technology Co., Ltd.": [
     "8C1F64A84"
   ],
+  "XSENSOR Technology Corp.": [
+    "8C1F647AA"
+  ],
   "AMF Medical SA": [
     "8C1F64F52"
   ],
-  "SCIREQ Scientific Respiratory Equipment  Inc": [
-    "8C1F6401E"
+  "Qualitrol LLC": [
+    "8C1F64905"
   ],
   "HUPI": [
     "8C1F64489"
-  ],
-  "Qualitrol LLC": [
-    "8C1F64905"
   ],
   "WINTUS SYSTEM": [
     "8C1F649BA"
