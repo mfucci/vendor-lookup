@@ -1,5 +1,5 @@
 {
-  "name": "vendor-lookup",
+  "name": "@network-utils/vendor-lookup",
   "version": "1.0.0-0",
   "description": "Returns the IEEE registered vendor name from the MAC address, using an up-to-date database (with a script to update it automatically).",
   "main": "build/dist/VendorLookup.js",
@@ -7,8 +7,8 @@
     "build": "tsc",
     "build_test": "tsc --project tsconfig.test.json",
     "build_script": "tsc --project tsconfig.script.json",
-    "update": "npm run build_script && node build/script/UpdateVendorDatabase.js",
-    "test": "npm run build && npm run build_test && mocha --require ts-node/register ./build/test/test/*.js"
+    "update": "npm run build_script && node build/script/UpdateVendorDatabase.js && npm version patch",
+    "test": "npm run build_test && mocha --require ts-node/register ./build/test/test/*.js"
   },
   "repository": {
     "type": "git",
