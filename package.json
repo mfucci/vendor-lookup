@@ -1,6 +1,6 @@
 {
   "name": "@network-utils/vendor-lookup",
-  "version": "1.0.0-3",
+  "version": "1.0.0-4",
   "description": "Returns the IEEE registered vendor name from the MAC address, using an up-to-date database (with a script to update it automatically).",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
