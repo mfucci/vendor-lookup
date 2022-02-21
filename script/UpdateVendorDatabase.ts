@@ -13,9 +13,9 @@ const OUI_36_URL = "https://standards-oui.ieee.org/oui36/oui36.csv";
 const OUI_URLS = [OUI_24_URL, OUI_28_URL, OUI_36_URL];
 
 class Updater {
-    readonly settings = new Settings("vendor-from-mac", "update");
+    readonly settings = new Settings("vendor-lookup", "cache");
     readonly etag = this.settings.getSetting<Record<string, string>>("etags");
-    readonly cache = this.settings.getSetting<Record<string, string>>("cache");
+    readonly cache = this.settings.getSetting<Record<string, string>>("data");
 
     async update() {
         console.log("Updating vendor data");
@@ -34,7 +34,7 @@ class Updater {
             .forEach(([, prefix, vendor]) => (result[vendor] ?? (result[vendor] = [])).push(prefix)));
         delete result["Organization Name"] // Delete table header.
 
-        const databasePath = path.join(__dirname, "../../src/Database.ts");
+        const databasePath = path.join(__dirname, "../../src/VendorDatabase.ts");
         fs.writeFileSync(databasePath, `// Last update on ${new Date().toString()}\nexport const MAC_PREFIX_PER_VENDOR: Record<string, string[]> = ${JSON.stringify(result, undefined, 2)};`);
 
         console.log("Done");

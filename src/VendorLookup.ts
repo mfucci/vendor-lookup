@@ -1,4 +1,4 @@
-import { MAC_PREFIX_PER_VENDOR } from "./Database";
+import { MAC_PREFIX_PER_VENDOR } from "./VendorDatabase";
 
 export function isRandomMac(mac: string) {
     return ["2", "6", "A", "E", "a", "e"].includes(mac.charAt(1));
@@ -13,7 +13,7 @@ function loadDatabase() {
     }
 }
 
-export function vendorFromMac(mac: string) {
+export function toVendor(mac: string) {
     if (isRandomMac(mac)) return "<random MAC>";
 
     if (!intialized) {

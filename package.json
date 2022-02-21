@@ -1,8 +1,8 @@
 {
-  "name": "vendor-from-mac",
+  "name": "vendor-lookup",
   "version": "0.0.1",
-  "description": "Returns the IEEE registered vendor name from the MAC address, using an up-to-date database (script to update it automatically).",
-  "main": "build/VendorFromMac.js",
+  "description": "Returns the IEEE registered vendor name from the MAC address, using an up-to-date database (with a script to update it automatically).",
+  "main": "build/dist/VendorLookup.js",
   "scripts": {
     "build": "tsc",
     "build_test": "tsc --project tsconfig.test.json",
@@ -12,20 +12,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mfucci/vendor-from-mac.git"
+    "url": "git+https://github.com/mfucci/vendor-lookup.git"
   },
   "keywords": [
     "ieee",
     "mac",
     "vendor",
+    "lookup",
     "oui"
   ],
+  "files": [
+    "build/dist/**/*"
+  ],
   "author": "Marco Fucci di Napoli <mfucci@gmail.com>",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mfucci/vendor-from-mac/issues"
+    "url": "https://github.com/mfucci/vendor-lookup/issues"
   },
-  "homepage": "https://github.com/mfucci/vendor-from-mac#readme",
+  "homepage": "https://github.com/mfucci/vendor-lookup#readme",
   "devDependencies": {
     "@types/mocha": "^9.1.0",
     "@types/node": "^17.0.18",

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "outDir": "build/lib",
+    "outDir": "build/dist",
     "noImplicitAny": true,
     "removeComments": true,
     "esModuleInterop": true,
