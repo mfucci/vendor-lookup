@@ -21,7 +21,7 @@ class Updater {
         console.log("Updating vendor data");
         var updated = false;
         for (var url of OUI_URLS) {
-            updated ||= await this.updateData(url);
+            updated = await this.updateData(url) || updated;
         }
         if (!updated) {
             console.log("The database is already up-to-date");
@@ -46,7 +46,7 @@ class Updater {
         const head = await axios.head(url);
         const currentEtag = head.headers["etag"] as string;
 
-        if (previousEtag == currentEtag) {
+        if (previousEtag === currentEtag) {
             console.log(`Up-to-date`);
             return false;
         }
