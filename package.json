@@ -8,7 +8,7 @@
     "build": "tsc",
     "build_test": "tsc --project tsconfig.test.json",
     "build_script": "tsc --project tsconfig.script.json",
-    "update": "npm run build_script && npm version patch && node build/script/UpdateVendorDatabase.js",
+    "update": "npm run build && npm run build_script && npm version patch && node build/script/UpdateVendorDatabase.js",
     "test": "npm run build_test && mocha --require ts-node/register ./build/test/test/*.js"
   },
   "repository": {
