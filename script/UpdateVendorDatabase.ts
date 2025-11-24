@@ -3,6 +3,13 @@ import path from "path";
 
 import axios from "axios";
 
+const axiosConfig = {
+    headers: {
+        "Accept": "text/csv,*/*",
+        "User-Agent": "vendor-lookup-updater"
+    }
+};
+
 import { Settings } from "./Settings";
 import { parse } from "csv-parse/sync";
 
@@ -43,7 +50,7 @@ class Updater {
     private async updateData(url: string) {
         console.log(`Checking ${url}`);
         const previousEtag = this.etag[url];
-        const head = await axios.head(url);
+        const head = await axios.head(url, axiosConfig);
         const currentEtag = head.headers["etag"] as string;
 
         if (previousEtag === currentEtag) {
@@ -52,7 +59,7 @@ class Updater {
         }
 
         console.log(`Downloading ${url}`);
-        const data = (await axios.get(url)).data as string;
+        const data = (await axios.get(url, axiosConfig)).data as string;
         this.etag[url] = currentEtag;
         this.cache[url] = data;
         this.settings.save();
