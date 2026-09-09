@@ -1,5 +1,15 @@
 import * as assert from "assert";
 import { toVendor } from "../src/VendorLookup";
+import { MAC_PREFIX_PER_VENDOR } from "../src/VendorDatabase";
+
+// IEEE re-assigns prefixes over time, so a hard-coded private prefix stops being
+// private after a database update. Pick one out of the current database instead.
+function aPrivatePrefix() {
+    const prefix = MAC_PREFIX_PER_VENDOR["Private"]
+        .find(prefix => !["2", "6", "A", "E"].includes(prefix.charAt(1)));
+    assert.ok(prefix !== undefined, "no private prefix in the database");
+    return prefix!.padEnd(12, "0");
+}
 
 describe("toVendor", () => {
     it("returns the vendor for a known MAC", () => {
@@ -15,6 +25,6 @@ describe("toVendor", () => {
     });
 
     it("returns <private> for a private MAC", () => {
-        assert.equal(toVendor("70:B3:D5:6F:41:22"), "<private>");
+        assert.equal(toVendor(aPrivatePrefix()), "<private>");
     });
 });
